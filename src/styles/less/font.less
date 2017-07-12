@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'vue-multiple';
+  src:
+    url('@{icomoon-font-path}/vue-multiple.ttf?asdp08') format('truetype'),
+    url('@{icomoon-font-path}/vue-multiple.woff?asdp08') format('woff'),
+    url('@{icomoon-font-path}/vue-multiple.svg?asdp08#vue-multiple') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*=" vm-icon-"],[class^=vm-icon-] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vue-multiple' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vm-icon-neutral-empty {
+  &:before {
+    content: @vm-icon-neutral-empty;
+  }
+}
+.vm-icon-neutral-full {
+  &:before {
+    content: @vm-icon-neutral-full;
+  }
+}
+.vm-icon-sad {
+  &:before {
+    content: @vm-icon-sad;
+  }
+}
+.vm-icon-smile {
+  &:before {
+    content: @vm-icon-smile;
+  }
+}
+.vm-icon-star-empty {
+  &:before {
+    content: @vm-icon-star-empty;
+  }
+}
+.vm-icon-star-full {
+  &:before {
+    content: @vm-icon-star-full;
+  }
+}
+.vm-icon-star-half {
+  &:before {
+    content: @vm-icon-star-half;
+  }
+}

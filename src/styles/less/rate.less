@@ -1,0 +1,45 @@
+@rate-prefix-cls: ~"@{vm-prefix}rate";
+
+.@{rate-prefix-cls} {
+  height: @rate-height;
+  line-height: 1;
+
+  &__item {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+  }
+
+  &__icon {
+	position: relative;
+	display: inline-block;
+	margin-right: @rate-icon-margin;
+	font-size: @rate-icon-size;
+	color: @rate-icon-color;
+	&.hover {
+	  transform: scale(1.15)
+	}
+  }
+
+  &__decimal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	overflow: hidden;
+  }
+
+  &__text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: @rate-font-size;
+	i {
+	  display: inline-block;
+	  min-width: 1.2em;
+	  font-style: normal;
+	  text-align: right;
+	  margin-right: 3px;
+	}
+  }
+}
