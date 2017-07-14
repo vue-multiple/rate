@@ -37,7 +37,7 @@
       </demo>
     </div>
     <div class="rate-demo__item">
-      <h3 id="#fu-zhu-wen-zi">
+      <h3 id="fu-zhu-wen-zi">
         <a href="#fu-zhu-wen-zi" aria-hidden="true" class="header-anchor">¶</a>
         辅助文字
       </h3>
@@ -407,6 +407,17 @@
       font-size: 14px;
       color: #5e6d82;
       line-height: 1.5em;
+      a {
+        color: #2d8cf0;
+        background: 0 0;
+        text-decoration: none;
+        outline: 0;
+        cursor: pointer;
+        transition: color .2s ease;
+        &:hover {
+          color: #57a3f3;
+        }
+      }
     }
     .new {
       font-style: normal;
