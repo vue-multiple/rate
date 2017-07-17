@@ -9,13 +9,29 @@ export const sourcecodeA = `<div class="block">
       :colors="['#99A9BF', '#F7BA2A', '#FF9900']">
   </vm-rate>
 </div>
+<div class="block">
+  <span class="demonstration">指定大小，默认单位px</span>
+  <vm-rate
+    v-model="valueA3"
+    :size="36">
+  </vm-rate>
+</div>
+<div class="block">
+  <span class="demonstration">指定大小，单位rem</span>
+  <vm-rate
+    v-model="valueA4"
+    size="2rem">
+  </vm-rate>
+</div>
 
 <script>
   export default {
     data () {
       return {
         valueA1: 0,
-        valueA2: 0
+        valueA2: 0,
+        valueA3: 0,
+        valueA4: 0
       }
     }
   }

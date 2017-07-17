@@ -25,6 +25,20 @@
                 :colors="colorsA2">
             </vm-rate>
           </div>
+          <div class="block">
+            <span class="demonstration">指定大小，默认单位px</span>
+            <vm-rate
+              v-model="valueA3"
+              :size="36">
+            </vm-rate>
+          </div>
+          <div class="block">
+            <span class="demonstration">指定大小，单位rem</span>
+            <vm-rate
+              v-model="valueA4"
+              size="2rem">
+            </vm-rate>
+          </div>
         </template>
         <template slot="description">
           评分被分为三个等级，可以利用颜色对分数及情感倾向进行分级（默认情况下不区分颜色）。三个等级所对应的颜色用过 <code>colors</code> 属性设置，而它们对应的两个阈值则通过 <code>low-threshold</code>
@@ -200,6 +214,13 @@
         </thead>
         <tbody>
         <tr>
+          <td>size <i class="new">（新增）</i></td>
+          <td>评分字体大小</td>
+          <td>number / string</td>
+          <td>% / in / cm / mm / em / ex / pt / pc / px / rem</td>
+          <td>18</td>
+        </tr>
+        <tr>
           <td>max</td>
           <td>最大分值</td>
           <td>number</td>
@@ -345,6 +366,8 @@
       return {
         valueA1: 0,
         valueA2: 0,
+        valueA3: 0,
+        valueA4: 0,
         colorsA2: ['#99A9BF', '#F7BA2A', '#FF9900'],
         valueB1: 3,
         valueB2: 3,
