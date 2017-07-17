@@ -43,6 +43,10 @@
         type: Number,
         default: 0
       },
+      size: {
+        type: [Number,String],
+        default: 18
+      },
       max: {
         type: Number,
         default: 5
@@ -210,8 +214,17 @@
       },
       getIconStyle (item) {
         let voidColor = this.disabled ? this.colorMap.disabledVoidColor : this.colorMap.voidColor
+        const UNITS = ['%', 'in', 'cm', 'mm', 'em', 'ex', 'pt', 'pc', 'px', 'rem']
+
         return {
-          color: item <= this.currentValue ? this.activeColor : voidColor
+          color: item <= this.currentValue ? this.activeColor : voidColor,
+          fontSize: `${this.size +
+            (
+              typeof this.size === 'string'
+              && UNITS.indexOf(this.size.replace(/\d*\.*\d*/, '')) > -1
+              ? '' : 'px'
+            )
+          }`
         }
       },
       selectValue (value) {

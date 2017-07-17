@@ -48,7 +48,7 @@
   content: "\E906";
 }
 .vm-rate {
-  height: 20px;
+  /* height: @rate-height; */
   line-height: 1;
 }
 .vm-rate__item {
