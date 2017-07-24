@@ -5,10 +5,13 @@ import App from './App.vue'
 import VueHighlightJS from 'vue-highlightjs'
 Vue.use(VueHighlightJS)
 
+import VueDemonstration from 'vue-demonstration'
+Vue.component('demonstration', VueDemonstration)
+
 import Rate from '../../src/index.js'
 Vue.component(Rate.name, Rate)
 
 new Vue({
-    el: '#app',
-    render: h => h(App)
+  el: '#app',
+  render: h => h(App)
 })
