@@ -1,7 +1,7 @@
 {
   "name": "vue-multiple-rate",
   "description": "element rate clone, and did just a little change",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "author": "vue-multiple",
   "main": "lib/rate.js",
   "files": [
