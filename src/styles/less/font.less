@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'vue-multiple';
+  font-family: 'vm-rate-font';
   src:
     url('@{icomoon-font-path}/vue-multiple.ttf?asdp08') format('truetype'),
     url('@{icomoon-font-path}/vue-multiple.woff?asdp08') format('woff'),
@@ -8,9 +8,9 @@
   font-style: normal;
 }
 
-[class*=" vm-icon-"],[class^=vm-icon-] {
+[class*=" vm-rate-icon-"],[class^=vm-rate-icon-] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'vue-multiple' !important;
+  font-family: 'vm-rate-font';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -23,38 +23,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.vm-icon-neutral-empty {
+.vm-rate-icon-neutral-empty {
   &:before {
-    content: @vm-icon-neutral-empty;
+    content: @vm-rate-icon-neutral-empty;
   }
 }
-.vm-icon-neutral-full {
+.vm-rate-icon-neutral-full {
   &:before {
-    content: @vm-icon-neutral-full;
+    content: @vm-rate-icon-neutral-full;
   }
 }
-.vm-icon-sad {
+.vm-rate-icon-sad {
   &:before {
-    content: @vm-icon-sad;
+    content: @vm-rate-icon-sad;
   }
 }
-.vm-icon-smile {
+.vm-rate-icon-smile {
   &:before {
-    content: @vm-icon-smile;
+    content: @vm-rate-icon-smile;
   }
 }
-.vm-icon-star-empty {
+.vm-rate-icon-star-empty {
   &:before {
-    content: @vm-icon-star-empty;
+    content: @vm-rate-icon-star-empty;
   }
 }
-.vm-icon-star-full {
+.vm-rate-icon-star-full {
   &:before {
-    content: @vm-icon-star-full;
+    content: @vm-rate-icon-star-full;
   }
 }
-.vm-icon-star-half {
+.vm-rate-icon-star-half {
   &:before {
-    content: @vm-icon-star-half;
+    content: @vm-rate-icon-star-half;
   }
 }

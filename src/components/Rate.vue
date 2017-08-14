@@ -84,16 +84,16 @@
       iconClasses: {
         type: Array,
         default () {
-          return ['vm-icon-star-full', 'vm-icon-star-full', 'vm-icon-star-full']
+          return ['vm-rate-icon-star-full', 'vm-rate-icon-star-full', 'vm-rate-icon-star-full']
         }
       },
       voidIconClass: {
         type: String,
-        default: 'vm-icon-star-empty'
+        default: 'vm-rate-icon-star-empty'
       },
       disabledVoidIconClass: {
         type: String,
-        default: 'vm-icon-star-full'
+        default: 'vm-rate-icon-star-full'
       },
       showText: {
         type: Boolean,

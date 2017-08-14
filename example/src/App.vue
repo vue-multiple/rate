@@ -85,9 +85,9 @@
       <template slot="source">
         <vm-rate
             v-model="valueC1"
-            :iconClasses="['vm-icon-sad', 'vm-icon-neutral-full', 'vm-icon-smile']"
-            voidIconClass="vm-icon-neutral-empty"
-            disabledVoidIconClass="vm-icon-neutral-full"
+            :iconClasses="['vm-rate-icon-sad', 'vm-rate-icon-neutral-full', 'vm-rate-icon-smile']"
+            voidIconClass="vm-rate-icon-neutral-empty"
+            disabledVoidIconClass="vm-rate-icon-neutral-full"
             :colors="['#99A9BF', '#F7BA2A', '#FF9900']"></vm-rate>
       </template>
       <template slot="explanation">
@@ -263,21 +263,21 @@
             <td>icon 的类名数组，共有 3 个元素，为 3 个分段所对应的类名</td>
             <td>array</td>
             <td>—</td>
-            <td>['vm-icon-star-on', 'vm-icon-star-on','vm-icon-star-on']</td>
+            <td>['vm-rate-icon-star-on', 'vm-rate-icon-star-on','vm-rate-icon-star-on']</td>
           </tr>
           <tr>
             <td>void-icon-class</td>
             <td>未选中 icon 的类名</td>
             <td>string</td>
             <td>—</td>
-            <td>vm-icon-star-empty</td>
+            <td>vm-rate-icon-star-empty</td>
           </tr>
           <tr>
             <td>disabled-void-icon-class</td>
             <td>只读时未选中 icon 的类名</td>
             <td>string</td>
             <td>—</td>
-            <td>vm-icon-star-on</td>
+            <td>vm-rate-icon-star-on</td>
           </tr>
           <tr>
             <td>show-text</td>
