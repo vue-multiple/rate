@@ -131,8 +131,8 @@
 
     watch: {
       value (val) {
-        this.value = val
-        this.$emit('change', val)
+        this.currentValue = val
+        this.pointerAtLeftHalf = this.value !== Math.floor(this.value)
       }
     },
 
@@ -233,8 +233,10 @@
         }
         if (this.allowHalf && this.pointerAtLeftHalf) {
           this.$emit('input', this.currentValue)
+          this.$emit('change', this.currentValue)
         } else {
           this.$emit('input', value)
+          this.$emit('change', value)
         }
       },
       setCurrentValue (value, event) {
