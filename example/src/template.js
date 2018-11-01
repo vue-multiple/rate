@@ -82,7 +82,39 @@ export const sourcecodeC = `<vm-rate
   }
 </script>`
 
-export const sourcecodeD = `<div class="block">
+export const sourcecodeD = `<div class="vd-demo__block vd-demo__block-1">
+  <span class="vd-demo__demonstration">允许出现半星 <i class="new">(修改特性)</i></span>
+  <vm-rate
+      v-model="valueD1"
+      disabled
+      :allow-half="true"
+      show-text
+      text-color="#ff9900"
+      text-template="{value}"></vm-rate>
+</div>
+<div class="vd-demo__block vd-demo__block-1">
+  <span class="vd-demo__demonstration">不允许出现半星 <i class="new">(新增示例)</i></span>
+  <vm-rate
+      v-model="valueD1"
+      disabled
+      :allow-half="false"
+      show-text
+      text-color="#ff9900"
+      text-template="{value}❤"></vm-rate>
+</div>
+
+<script>
+  export default {
+    data () {
+      return {
+        valueD1: 3.7,
+        valueD2: 3.7
+      }
+    }
+  }
+</script>`
+
+export const sourcecodeE = `<div class="block">
   <span class="demonstration">默认半星</span>
   <vm-rate
       v-model="valueE1"
@@ -126,4 +158,3 @@ export const sourcecodeD = `<div class="block">
     }
   }
 </script>`
-

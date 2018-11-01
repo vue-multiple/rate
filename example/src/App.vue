@@ -105,6 +105,7 @@
       <template slot="source">
         <div class="vd-demo__block vd-demo__block-1">
           <span class="vd-demo__demonstration">允许出现半星 <i class="new">(修改特性)</i></span>
+          {{valueD1}}
           <vm-rate
               v-model="valueD1"
               disabled
@@ -116,7 +117,7 @@
         <div class="vd-demo__block vd-demo__block-1">
           <span class="vd-demo__demonstration">不允许出现半星 <i class="new">(新增示例)</i></span>
           <vm-rate
-              v-model="valueD1"
+              v-model="valueD2"
               disabled
               :allow-half="false"
               show-text
@@ -134,7 +135,7 @@
     </demonstration>
     <demonstration
         anchor="ban-xing"
-        :highlight="sourcecodeD"
+        :highlight="sourcecodeE"
         :multiple="true">
       <template slot="title">
         半星 <i class="new">(新增示例)</i>
@@ -342,7 +343,7 @@
   </div>
 </template>
 <script>
-  import { sourcecodeA, sourcecodeB, sourcecodeC, sourcecodeD } from './template.js'
+  import { sourcecodeA, sourcecodeB, sourcecodeC, sourcecodeD, sourcecodeE } from './template.js'
 
   export default {
     data () {
@@ -364,7 +365,8 @@
         sourcecodeA,
         sourcecodeB,
         sourcecodeC,
-        sourcecodeD
+        sourcecodeD,
+        sourcecodeE
       }
     }
   }
